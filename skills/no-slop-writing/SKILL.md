@@ -106,7 +106,7 @@ Before delivering the document, reread it once and ask:
 **Before:**
 
 > It's important to note that in today's fast-paced business environment, customer onboarding is not just a process — it's a critical journey that can make or break the customer relationship. Our team has leveraged a robust, holistic approach to reimagine this experience.
->
+
 > **Key Findings:**
 > - Onboarding time was reduced
 > - Customer satisfaction improved
