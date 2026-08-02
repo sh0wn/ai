@@ -1,13 +1,15 @@
 ---
 name: no-slop-writing
 description: Strip AI-generated slop — buzzwords, padded formatting, hedging, sycophancy, needless length — from any document before delivering it. Use before finalizing any report, memo, or written file.
+metadata:
+  version: "1.2"
 ---
 
 # No-Slop Writing
 
 Readers spot AI-generated writing fast, and the tells are specific: certain words, a compulsive urge to bullet everything, throat-clearing before the point, compliments nobody asked for, and paragraphs that say one sentence's worth of content in five. None of that is about the ideas being wrong — it's packaging that undermines otherwise good content.
 
-This is a revision pass. Draft the document normally with whatever skill applies (docx, pdf, pptx, xlsx, markdown), then run it through the seven checks below before it goes out. Reread the actual draft against each one — don't just skim.
+This is a revision pass. Draft the document normally with whatever skill applies (docx, pdf, pptx, xlsx, markdown), then run it through the eight checks below before it goes out. Reread the actual draft against each one — don't just skim.
 
 ## 1. Cut AI-isms and buzzwords
 
@@ -73,6 +75,18 @@ These show up so often in AI output that readers clock them almost as fast as th
 - Software doesn't "empower users" or "navigate challenges" — people do things, tools do things mechanically. Say what the person can now do, or what the tool actually does, not what it heroically enables.
 - Write like a peer explaining something, not like a brochure or a textbook. If a sentence would sound at home in marketing copy or an academic abstract, rewrite it or cut it.
 
+## 8. Use correct punctuation characters, not typewriter shortcuts
+
+Plain-ASCII typing habits leave marks a properly typeset document doesn't have. Where these characters appear, get the actual character right:
+
+- Curly quotes, not straight ones: “like this,” not "like this" — for both double and single quotes/apostrophes.
+- A real ellipsis character (…), not three typed periods (...).
+- For number ranges, spell out "to": 10 to 20, not 10-20 or 10–20. For date ranges, use an en dash instead: 2023–2024, not a hyphen (2023-2024). A hyphen is for compound words only (well-known, twenty-two).
+- If a dash construction survives the mechanical-patterns check in section 6, render it as an actual em dash (—) — not a double hyphen (--) or a hyphen with spaces around it ( - ).
+- Avoid Title Case For Every Word In A Heading. Use sentence case instead: capitalize only the first word and proper nouns.
+
+Exception: never smart-quote or re-character anything inside code blocks, inline code, file paths, commands, or anything meant to be copied and run. Those need literal ASCII straight quotes, three-dot ellipses, and plain hyphens, or they break.
+
 ## Final pass
 
 Before delivering the document, reread it once and ask:
@@ -85,6 +99,7 @@ Before delivering the document, reread it once and ask:
 - Any em dashes standing in for a period or comma? Any sentence set up purely to land a colon-reveal?
 - Does anything in here have three of something just because three felt right?
 - Does any sentence give an inanimate thing human agency ("the platform empowers...")?
+- Any straight quotes, three-dot ellipses, hyphenated number ranges (should read "X to Y"), hyphenated date ranges (should be an en dash), or Title Case headers outside of code and commands?
 
 ## Example
 
@@ -102,3 +117,9 @@ Before delivering the document, reread it once and ask:
 > Onboarding time dropped from 14 days to 6, and post-onboarding satisfaction scores rose from 72 to 89. The redesign focused on cutting handoffs between support teams, which was the main source of delay.
 
 Same information, a third of the length, nothing left for the reader to wade through.
+
+## Changelog
+
+- **1.0** (2026-08-01) — Initial version: banned vocabulary and buzzwords, formatting discipline, hedging/filler/throat-clearing, sycophancy, padding, mechanical sentence patterns (em dashes, sentence-length rhythm, colon-reveals, rule of three), and false agency.
+- **1.1** (2026-08-01) — Added punctuation section: curly quotes, real ellipsis character, en dashes for ranges, em dash character correctness, minimizing Title Case in headers, and a code-block exception.
+- **1.2** (2026-08-01) — Number ranges now spelled out with "to" (10 to 20) instead of a dash; date ranges keep the en dash (2023–2024).
